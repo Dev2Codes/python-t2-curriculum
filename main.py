@@ -1,1 +1,1 @@
-from lesson1.classwork import string_slicing
+from lesson1.homework import problems
