@@ -45,6 +45,7 @@ for char in word:
     if char == "a":
         print("Found object \"a\" at index:", word.index(char))
         found = True
+        break
 
 if not found:
     print("-1")
