@@ -58,3 +58,8 @@ n = int(input("Gimme an integer (AGAIN!!): "))
 iter:list[int] = range(1, n+1, 2)
 
 print("There are {} even numbers from 1 to {}".format(len(iter), n))
+
+#or
+
+n = int(input("Gimme an integer (AGAIN!! AGAIN!!): "))
+print("There are {} even numbers from 1 to {}".format(n//2, n))
