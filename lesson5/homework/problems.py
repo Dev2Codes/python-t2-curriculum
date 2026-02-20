@@ -119,3 +119,9 @@ class WordTracker:
             print("New string: {}".format(self.word))
         else:
             print("Tooo short!!")
+
+tracker:WordTracker = WordTracker("sixseven")
+tracker.add_letter("!")
+tracker.add_letter(" ")
+tracker.add_letter("W")
+tracker.remove_letter()
