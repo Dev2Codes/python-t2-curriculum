@@ -1,3 +1,11 @@
+def read(prompt:str) -> str:
+    inpu = input(prompt)
+    if inpu.isdigit():
+        return int(inpu)
+    else:
+        return inpu
+
+
 # Problem 1
 # Create a tuple called scores with 4 numbers.
 # Print the average score.
@@ -10,7 +18,14 @@ print(avg)
 # Create a list of tuples representing students:
 # ("Ava", 95), ("Ben", 88), ("Kai", 73)
 # Print the name of the student with the highest score.
-students:list[tuple[str, int]] = [("Ava", 95), ("Ben", 88), ("Kai", 73)]
+students:list[tuple[str, int]] = []
+print("Skyward CLI:")
+
+for x in range(4):
+    name:str = read("Enter student name: ")
+    score:int = read("Enter student score: ")
+    students.append((name, score))
+
 hscore:int = 0
 hstudent:str = ""
 
@@ -18,6 +33,8 @@ for student in students:
     if student[1] > hscore:
         hscore = student[1]
         hstudent = student[0]
+
+        print("\nProblem 2")   
 
 print("{} recieved the high score of {}".format(hstudent, hscore))
 
@@ -27,7 +44,7 @@ print("{} recieved the high score of {}".format(hstudent, hscore))
 # Split it into words.
 # Create a list of tuples where each tuple is (word, length_of_word).
 # Print the list.
-sentence:str = input("Enter a sentence: ")
+sentence:str = read("Enter a sentence: ")
 words:list[str] = sentence.split()
 statistics:list[tuple[str, int]] = list()
 
