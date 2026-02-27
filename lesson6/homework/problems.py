@@ -59,7 +59,10 @@ print(statistics)
 # Test it.
 
 def first_and_last(word:str) -> tuple[str, str]:
-    return (word[0], word[-1])
+    try:
+        return (word[0], word[-1])
+    except:
+        raise print("shorty! Ha!")
 
 print(first_and_last("67"))
 print(first_and_last("hello"))
