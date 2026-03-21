@@ -104,7 +104,16 @@ print(points)
 # Use turtle to stamp the turtle 12 times in a circle.
 # Each stamp should be a random color.
 # (Hint: use random.choice on a list of colors)
+t = turtle.Turtle()
+coolors = ["red", "blue", "black", "orange"]
 
+for x in range(12):
+    t.forward(67)
+    t.left(30)
+    t.color(random.choice(coolors))
+    t.stamp()
+
+turtle.done()
 
 
 # Problem 10  ( 4 : 2 )
