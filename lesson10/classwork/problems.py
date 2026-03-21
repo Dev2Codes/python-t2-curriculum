@@ -24,7 +24,7 @@ print(cc)
 # Problem 3  ( 2 : 1 )
 # Use a for loop with range to print: 0, 10, 20, 30, ..., 100
 
-for x in range(0, 100, 10):
+for x in range(0, 110, 10):
     print(x)
 
 
@@ -48,9 +48,11 @@ print(wordcount1)
 # Ask the user for a word.
 # Build the reversed word WITHOUT using slicing (no [::-1]).
 wordle:str = input("word: ")
+nword = ""
 
 for char in reversed(wordle):
-    print(char)
+    nword+=char
+print(nword)
 
 
 # Problem 6  ( 4 : 2 )
@@ -78,11 +80,11 @@ print(Links.score)
 # Store them in a tuple (name, age).
 # Unpack the tuple into variables and print them.
 
-python_asked_for_social_security_number:tuple[str] = (input("fname: "), input("lname"))
-fname, lname = python_asked_for_social_security_number
+python_asked_for_social_security_number:tuple[str] = (input("fname: "), int(input("age")))
+fname, age = python_asked_for_social_security_number
 
 print(fname)
-print(lname)
+print(age)
 
 
 # Problem 8  ( 3 : 2 )
@@ -123,7 +125,7 @@ turtle.done()
 
 print("SKYWARD!")
 scores = dict()
-maximum = int()
+maximum = 0
 winner = str()
 
 for potato in range(3):
