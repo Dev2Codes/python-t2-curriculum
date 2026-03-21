@@ -47,7 +47,10 @@ print(wordcount1)
 # Problem 5  ( 3 : 2 )
 # Ask the user for a word.
 # Build the reversed word WITHOUT using slicing (no [::-1]).
+wordle:str = input("word: ")
 
+for char in reversed(wordle):
+    print(char)
 
 
 # Problem 6  ( 4 : 2 )
@@ -108,3 +111,18 @@ print(points)
 # Ask the user for 3 student names and their scores.
 # Store them in a dictionary.
 # Print the name of the student with the highest score.
+
+print("SKYWARD!")
+scores = dict()
+maximum = int()
+winner = str()
+
+for potato in range(3):
+    tmpl = input("Firstname: ")
+    tmps = int(input("Score: "))
+    scores[tmpl] = tmps
+    if tmps > maximum:
+        winner = tmpl
+        tmps = maximum
+
+print(winner)
