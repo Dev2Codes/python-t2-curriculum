@@ -78,7 +78,7 @@ print(Links.score)
 # Store them in a tuple (name, age).
 # Unpack the tuple into variables and print them.
 
-python_asked_for_social_security_number:tuple(str) = (input("fname: "), input("lname"))
+python_asked_for_social_security_number:tuple[str] = (input("fname: "), input("lname"))
 fname, lname = python_asked_for_social_security_number
 
 print(fname)
