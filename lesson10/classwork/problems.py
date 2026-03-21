@@ -134,6 +134,6 @@ for potato in range(3):
     scores[tmpl] = tmps
     if tmps > maximum:
         winner = tmpl
-        tmps = maximum
+        maximum = tmps
 
 print(winner)
